@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Earth Viewer Project",
+    "description": "My University OOP first large Project 2019.",
+    "link": "https://github.com/DzyhovskyiVladyslav/Earth_Viewer_Project",
+    "image": "/images/projects/1.png"
+  },
+  {
+    "id": 2,
+    "title": "Unity Old Projects",
+    "description": "My Two Unity 2D and 3D Old Projects.",
+    "link": "https://github.com/DzyhovskyiVladyslav/Unity_Old_Projects",
+    "image": "/images/projects/2.png"
+  },
+  {
+    "id": 3,
+    "title": "Training Android Studio Projects ",
+    "description": "Some Training apps made during working as Java Android Developer 2022.",
+    "link": "https://github.com/DzyhovskyiVladyslav/Training_Android_Studio_Projects",
+    "image": "/images/projects/3.png"
+  },
+  {
+    "id": 4,
+    "title": "Arduino Simple Tasks",
+    "description": "Some small tasks that were created for the Arduino platform.",
+    "link": "https://github.com/DzyhovskyiVladyslav/University_Arduino",
+    "image": "/images/projects/4.png"
+  },
+  {
+    "id": 5,
+    "title": "Simple Review App Frontend",
+    "description": "A simple Angular project made during the Java FullStack Developer Specialization courses on Coursera by Board Infinity.",
+    "link": "https://github.com/DzyhovskyiVladyslav/simple-review-project",
+    "image": "/images/projects/5.png"
+  },
+  {
+    "id": 6,
+    "title": "Simple Review App Backend",
+    "description": "A simple Spring project made during the Java FullStack Developer Specialization courses on Coursera by Board Infinity.",
+    "link": "https://github.com/DzyhovskyiVladyslav/simple-review-app",
+    "image": "/images/projects/6.png"
+  },
+  {
+    "id": 7,
+    "title": "Little Lemon",
+    "description": "Meta Android Developer Professional Certificate final project.",
+    "link": "https://github.com/DzyhovskyiVladyslav/little-lemon",
+    "image": "/images/projects/7.png"
+  },
+  {
+    "id": 8,
+    "title": "Task Management API",
+    "description": "Task Management API is a RESTful API designed for task management, featuring CRUD operations, JWT-based authentication, and PostgreSQL database integration. This project is built with Spring Boot and demonstrates modern practices for building APIs.",
+    "link": "https://github.com/DzyhovskyiVladyslav/task-management-api",
+    "image": "/images/projects/8.png"
+  },
+  {
+    "id": 9,
+    "title": "Spring JWT Authentication Template",
+    "description": "This project is a template for implementing minimal authentication in Spring using JWT tokens. It provides a ready-to-use structure for managing user authentication and authorization with customizable security configurations.",
+    "link": "https://github.com/DzyhovskyiVladyslav/simple-jwt-auth",
+    "image": "/images/projects/9.png"
+  },
+  {
+    "id": 10,
+    "title": "E-commerce Backend API",
+    "description": "E-commerce Backend API is a RESTful API designed for managing products, cart, and orders, including integration with Stripe API for payment processing. This project is built with Spring Boot and follows modern practices for API development.",
+    "link": "https://github.com/DzyhovskyiVladyslav/ecommerce-backend",
+    "image": "/images/projects/10.png"
+  }
+]
