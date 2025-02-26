@@ -6,11 +6,11 @@ function Home() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch("/projects.json")
+    fetch(`${import.meta.env.BASE_URL}/projects.json`)
       .then((response) => response.json())
       .then((data) => setProjects(data.reverse().slice(0, 5)));
 
-    fetch("/blogposts.json")
+    fetch(`${import.meta.env.BASE_URL}/blogposts.json`)
       .then((response) => response.json())
       .then((data) => setPosts(data.reverse().slice(0, 5)));
   }, []);
@@ -28,7 +28,7 @@ function Home() {
         <div className="flex space-x-4 pb-1 overflow-x-auto">
           {projects.map((project) => (
             <div key={project.id} className="min-w-[300px] bg-gray-800 p-4 rounded-lg shadow-md">
-              <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-md mb-2"/>
+              <img src={`${import.meta.env.BASE_URL}${project.image}`} alt={project.title} className="w-full h-40 object-cover rounded-md mb-2"/>
               <h3 className="text-xl font-bold text-white overflow-hidden text-ellipsis line-clamp-1">{project.title}</h3>
               <p className="text-gray-400 h-20 text-sm overflow-hidden text-ellipsis line-clamp-4">{project.description}</p>
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline mt-2 block">View Project →</a>
@@ -60,7 +60,7 @@ function Home() {
         </p>
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="h-80">
-            <img src="/images/my-photo.jpg" alt="My Photo" className="w-full h-full  shadow-xl"/>
+            <img src={`${import.meta.env.BASE_URL}/images/my-photo.jpg`} alt="My Photo" className="w-full h-full  shadow-xl" />
           </div>
           <div className="text-left text-gray-300 text-lg leading-relaxed">
             <p><strong className="text-white">Name:</strong></p>
@@ -76,7 +76,7 @@ function Home() {
           </div>
         </div>
         <div className="flex justify-center gap-4 mt-12">
-          <a href="/resume.pdf" download="Dzyhovskyi - Software Engineer.pdf" className="bg-gray-700 hover:bg-gray-600 text-white text-xl px-8 py-4 rounded-xl shadow-lg transition">Download Resume (PDF)</a>
+          <a href={`${import.meta.env.BASE_URL}/resume.pdf`} download="Dzyhovskyi - Software Engineer.pdf" className="bg-gray-700 hover:bg-gray-600 text-white text-xl px-8 py-4 rounded-xl shadow-lg transition">Download Resume (PDF)</a>
           <Link to="/about" className="bg-gray-700 hover:bg-gray-600 text-white text-xl px-8 py-4 rounded-xl shadow-lg transition">More About Me →</Link>
         </div>
       </section>

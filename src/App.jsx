@@ -7,9 +7,11 @@ import Blog from "./pages/Blog";
 import BlogPost from "./pages/BlogPost";
 import About from "./pages/About";
 
+const basename = import.meta.env.BASE_URL;
+
 function App() {
   return (
-    <Router>
+    <Router basename={basename}>
       <div className="flex flex-col min-h-screen">
         <Header />
         <main className="flex-grow">

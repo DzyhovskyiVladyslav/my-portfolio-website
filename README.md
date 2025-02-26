@@ -19,7 +19,7 @@ This is my personal portfolio website showcasing my projects, blog, and professi
 ## Installation
 
 ```bash
-git clone https://github.com/your-username/your-portfolio.git
+git clone https://github.com/DzyhovskyiVladyslav/my-portfolio-website.git
 cd your-portfolio
 npm install
 npm run dev

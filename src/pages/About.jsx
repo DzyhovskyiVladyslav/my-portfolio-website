@@ -12,7 +12,7 @@ function About() {
         </p>
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="h-80">
-            <img src="/images/my-photo.jpg" alt="My Photo" className="w-full h-full shadow-xl rounded-lg"/>
+            <img src={`${import.meta.env.BASE_URL}/images/my-photo.jpg`} alt="My Photo" className="w-full h-full shadow-xl rounded-lg"/>
           </div>
           <div className="text-left text-gray-300 text-lg leading-relaxed">
             <p><strong className="text-white">Name:</strong> Vladyslav Dzyhovskyi</p>
@@ -110,7 +110,7 @@ function About() {
         </div>
       </section>
       <section className="text-center">
-        <a href="/resume.pdf" download="Dzyhovskyi - Software Engineer.pdf" className="bg-gray-700 hover:bg-gray-600 text-white text-xl px-8 py-4 rounded-xl shadow-lg transition">Download Resume (PDF)</a>
+        <a href={`${import.meta.env.BASE_URL}/resume.pdf`} download="Dzyhovskyi - Software Engineer.pdf" className="bg-gray-700 hover:bg-gray-600 text-white text-xl px-8 py-4 rounded-xl shadow-lg transition">Download Resume (PDF)</a>
       </section>
     </div>
   );
