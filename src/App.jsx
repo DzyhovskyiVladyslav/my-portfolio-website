@@ -21,7 +21,6 @@ function App() {
             <Route path="/blog" element={<Blog />} />
             <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/about" element={<About />} />
-            <Redirect to="/" />
           </Routes>
         </main>
         <Footer />
