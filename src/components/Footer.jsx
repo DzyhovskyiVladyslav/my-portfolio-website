@@ -2,7 +2,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaPhone, FaCode, FaArrowUp } from 're
 
 function Footer() {
   return (
-    <footer className="bg-gray-800 text-gray-300 py-8 relative">
+    <footer className="bg-gray-800 text-gray-300 pt-8 relative">
       <div className="flex flex-wrap justify-center gap-8 mb-6">
         <a href="tel:+41765307190" className="hover:text-white flex items-center gap-2">
           <FaPhone /> Call Me
@@ -20,7 +20,7 @@ function Footer() {
           <FaCode /> LeetCode
         </a>
       </div>
-      <div className="text-center mt-6 flex items-center justify-center gap-4">
+      <div className="text-center m-6 flex items-center justify-center gap-4">
         <p>© 2024 Vladyslav Dzyhovskyi. All rights reserved.</p>
         <span className="text-gray-600">|</span>
         <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="inline-flex items-center gap-1 hover:text-white transition">

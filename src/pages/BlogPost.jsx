@@ -7,13 +7,13 @@ function BlogPost() {
   const [content, setContent] = useState("");
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}/blogposts.json`)
+    fetch("/blogposts.json")
       .then((response) => response.json())
       .then((data) => {
         const foundPost = data.find((p) => p.id === parseInt(id));
         setPost(foundPost);
         if (foundPost) {
-          fetch(`${import.meta.env.BASE_URL}${foundPost.contentFile}`)
+          fetch(foundPost.contentFile)
             .then((response) => response.text())
             .then((html) => setContent(html));
         }

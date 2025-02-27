@@ -5,7 +5,7 @@ function Blog() {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
-    fetch(`${import.meta.env.BASE_URL}/blogposts.json`)
+    fetch("/blogposts.json")
       .then((response) => response.json())
       .then((data) => setPosts(data.reverse()))
       .catch((error) => console.error("Error loading blog posts:", error));
