@@ -18,7 +18,7 @@ function Header() {
         <nav className="hidden md:flex space-x-6 text-lg">
           <Link to="/" className="hover:text-gray-400 transition">Home</Link>
           <Link to="/projects" className="hover:text-gray-400 transition">Projects</Link>
-          <Link to="/blog" className="hover:text-gray-400 transition">Blog</Link>
+          {/* <Link to="/blog" className="hover:text-gray-400 transition">Blog</Link> */}
           <Link to="/about" className="hover:text-gray-400 transition">About Me</Link>
         </nav>
       </div>
@@ -35,9 +35,9 @@ function Header() {
               <li className="py-2 border-b border-gray-700">
                 <Link to="/projects" className="hover:text-white transition" onClick={() => setIsOpen(false)}>Projects</Link>
               </li>
-              <li className="py-2 border-b border-gray-700">
+{/*               <li className="py-2 border-b border-gray-700">
                 <Link to="/blog" className="hover:text-white transition" onClick={() => setIsOpen(false)}>Blog</Link>
-              </li>
+              </li> */}
               <li className="py-2">
                 <Link to="/about" className="hover:text-white transition" onClick={() => setIsOpen(false)}>About Me</Link>
               </li>

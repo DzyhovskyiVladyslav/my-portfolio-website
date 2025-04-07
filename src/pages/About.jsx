@@ -12,14 +12,19 @@ function About() {
         </p>
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="h-80">
-            <img src="/images/my-photo.jpg" alt="My Photo" className="w-full h-full shadow-xl rounded-lg"/>
+            <img src="/images/my-photo.jpg" alt="My Photo" className="max-w-70 max-h-80 shadow-xl"/>
           </div>
           <div className="text-left text-gray-300 text-lg leading-relaxed">
-            <p><strong className="text-white">Name:</strong> Vladyslav Dzyhovskyi</p>
-            <p><strong className="text-white">Birth Date:</strong> 04 October 2000</p>
-            <p><strong className="text-white">Email:</strong> dzyhovskyi.vladyslav@gmail.com</p>
-            <p><strong className="text-white">Mobile:</strong> +41 76 630 7190</p>
-            <p><strong className="text-white">Address:</strong> Herznach, Switzerland</p>
+            <p><strong className="text-white">Name:</strong></p>
+            <p class="mb-2">Vladyslav Dzyhovskyi</p>
+            <p><strong className="text-white">Birth Date:</strong></p>
+            <p class="mb-2">04 October 2000</p>
+            <p><strong className="text-white">Email:</strong></p>
+            <p class="mb-2">dzyhovskyi.vladyslav@gmail.com</p>
+            <p><strong className="text-white">Mobile:</strong></p>
+            <p class="mb-2">+41 76 530 7190</p>
+            <p><strong className="text-white">Address:</strong></p>
+            <p class="mb-2">Herznach, Switzerland</p>
           </div>
         </div>
       </section>

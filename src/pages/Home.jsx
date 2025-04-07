@@ -18,14 +18,14 @@ function Home() {
   return (
     <div className="container mx-auto py-12 px-6">
       <section className="text-center mb-12">
-        <h1 className="text-4xl font-bold text-white mb-4">Welcome</h1>
+        <h1 className="text-4xl font-bold text-white mt-20 mb-4">Welcome</h1>
         <p className="text-gray-400 text-lg">
-          Showcasing my latest projects and blog posts about software engineering, cloud technologies, and development.
+          Showcasing my latest projects in software engineering, cloud technologies, and development.
         </p>
       </section>
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-white mb-4">Latest Projects</h2>
-        <div className="flex space-x-4 pb-1 overflow-x-auto">
+        <div className="flex space-x-4 pb-1 overflow-x-auto mb-50">
           {projects.map((project) => (
             <div key={project.id} className="min-w-[300px] bg-gray-800 p-4 rounded-lg shadow-md">
               <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-md mb-2"/>
@@ -36,7 +36,7 @@ function Home() {
           ))}
         </div>
       </section>
-      <section className="mb-12">
+{/*       <section className="mb-12">
         <h2 className="text-3xl font-bold text-white mb-4">Blog Posts</h2>
         <div className="flex space-x-4 pb-1 overflow-x-auto">
           {posts.map((post) => (
@@ -47,10 +47,10 @@ function Home() {
             </div>
           ))}
         </div>
-      </section>
+      </section> */}
       <hr className="border-gray-700 my-16" />
       <section className="text-center">
-        <h2 className="text-4xl font-bold text-white mb-4">Who I am</h2>
+        <h2 className="text-4xl font-bold text-white mt-30 mb-4">Who I am</h2>
         <p className="text-gray-400 text-xl mb-6">Let Me Introduce Myself</p>
         <p className="text-gray-300 text-lg mb-6 max-w-175 mx-auto leading-relaxed">
           I am a passionate software engineer specializing in Java, Spring, and PostgreSQL.
@@ -60,22 +60,22 @@ function Home() {
         </p>
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="h-80">
-            <img src="/images/my-photo.jpg" alt="My Photo" className="w-full h-full  shadow-xl" />
+            <img src="/images/my-photo.jpg" alt="My Photo" className="max-w-70 max-h-80 shadow-xl"/>
           </div>
           <div className="text-left text-gray-300 text-lg leading-relaxed">
             <p><strong className="text-white">Name:</strong></p>
-            <p>Vladyslav Dzyhovskyi</p>
+            <p class="mb-2">Vladyslav Dzyhovskyi</p>
             <p><strong className="text-white">Birth Date:</strong></p>
-            <p>04 October 2000</p>
+            <p class="mb-2">04 October 2000</p>
             <p><strong className="text-white">Email:</strong></p>
-            <p>dzyhovskyi.vladyslav@gmail.com</p>
+            <p class="mb-2">dzyhovskyi.vladyslav@gmail.com</p>
             <p><strong className="text-white">Mobile:</strong></p>
-            <p>+41 76 630 7190</p>
+            <p class="mb-2">+41 76 530 7190</p>
             <p><strong className="text-white">Address:</strong></p>
-            <p>Herznach, Switzerland</p>
+            <p class="mb-2">Herznach, Switzerland</p>
           </div>
         </div>
-        <div className="flex justify-center gap-4 mt-12">
+        <div className="flex justify-center gap-4 mt-12 mb-20">
           <a href="/Vladyslav Dzyhovskyi - Software Engineer.pdf" download="Vladyslav Dzyhovskyi - Software Engineer.pdf" className="bg-gray-700 hover:bg-gray-600 text-white text-xl px-8 py-4 rounded-xl shadow-lg transition">Download Resume (PDF)</a>
           <Link to="/about" className="bg-gray-700 hover:bg-gray-600 text-white text-xl px-8 py-4 rounded-xl shadow-lg transition">More About Me →</Link>
         </div>
